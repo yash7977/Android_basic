@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/SelectComplexity"
+        android:layout_width="150dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/SelectComplexity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SeekBarResult"
+        android:layout_width="66dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/SelectComplexity"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Minimum"
+        android:layout_width="158dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/Minimum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/Maximum"
+        android:layout_width="158dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/Maximum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Minimum" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="411dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="36dp"
+        android:max="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelectComplexity" />
+
+    <TextView
+        android:id="@+id/Average"
+        android:layout_width="158dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/Average"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Maximum" />
+
+    <TextView
+        android:id="@+id/MinimumResult"
+        android:layout_width="158dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/Minimum"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/MaximumResult"
+        android:layout_width="158dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toEndOf="@+id/Maximum"
+        app:layout_constraintTop_toBottomOf="@+id/MinimumResult" />
+
+    <TextView
+        android:id="@+id/AverageResult"
+        android:layout_width="158dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toEndOf="@+id/Average"
+        app:layout_constraintTop_toBottomOf="@+id/MaximumResult" />
+
+    <Button
+        android:id="@+id/GenerateNumber"
+        android:layout_width="268dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="380dp"
+        android:text="@string/GenerateNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="258dp"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/MaximumResult"
+        app:layout_constraintStart_toStartOf="@+id/Maximum"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
