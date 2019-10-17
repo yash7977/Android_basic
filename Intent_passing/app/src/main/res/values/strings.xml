@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Inclass03</string>
+    <string name="firstNameHint">First Name</string>
+    <string name="lastNameHint">Last Name</string>
+    <string name="Female">Female</string>
+    <string name="Male">Male</string>
+    <string name="save">Save</string>
+    <string name="SelectGender">Select Gender</string>
+    <string name="Name">"Name: "</string>
+    <string name="FirstLastName" />
+    <string name="Edit">Edit</string>
+</resources>
